@@ -91,6 +91,7 @@ main .container .split {
 main .container .split .txt {
   color: var(--Very-Dark-Magenta);
 }
+
 @media (max-width: 767px) {
   main .container .split .txt {
     text-align: center;
@@ -130,6 +131,10 @@ main .container .split .txt {
     line-height: 2;
     max-width: 90%;
   }
+}
+
+main .container .split .txt p {
+  color: var(--Dark-Grayish-Magenta);
 }
 
 main .container .split .ratings {
@@ -332,7 +337,7 @@ main .container .customers .customer .profile .txt > p {
 
 main .container .customers .customer > p {
   font-size: 0.9rem;
-  color: var(--Light-Grayish-Magenta);
+  color: white;
   line-height: 1.5;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
