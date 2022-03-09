@@ -63,14 +63,14 @@ main .container {
     display: block;
     left: 0;
     top: 0;
-    width: 80%;
+    width: 100%;
     position: absolute;
   }
   .bg-bottom-mobile {
     display: block;
     right: 20%;
     bottom: -40%;
-    width: 80%;
+    width: 100%;
     position: absolute;
   }
 }
