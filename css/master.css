@@ -40,16 +40,6 @@
 body {
   font-family: "Spartan", sans-serif;
 }
-@media (max-width: 767px) {
-  body {
-    overflow-x: hidden;
-  }
-}
-@media (max-width: 768px) {
-  body {
-    overflow: hidden;
-  }
-}
 
 main .container {
   margin-top: 5rem;
@@ -58,20 +48,22 @@ main .container {
 /* bg */
 .background {
   display: none;
-  position: absolute;
+  position: relative;
 }
 @media (max-width: 767px) {
   .bg-top-mobile {
     display: block;
     left: 0;
     top: 0;
-    width: 100%;
+    width: 80%;
+    position: absolute;
   }
   .bg-bottom-mobile {
     display: block;
-    right: 0;
-    bottom: -10%;
-    width: 100%;
+    right: 20%;
+    bottom: -40%;
+    width: 80%;
+    position: absolute;
   }
 }
 @media (min-width: 768px) {
@@ -79,11 +71,13 @@ main .container {
     display: block;
     left: 0;
     top: 0;
+    position: absolute;
   }
   .bg-bottom-desktop {
     display: block;
     right: 0;
     bottom: 0;
+    position: absolute;
   }
 }
 
