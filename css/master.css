@@ -65,11 +65,13 @@ main .container {
     display: block;
     left: 0;
     top: 0;
+    width: 100%;
   }
   .bg-bottom-mobile {
     display: block;
     right: 0;
     bottom: -10%;
+    width: 100%;
   }
 }
 @media (min-width: 768px) {
