@@ -40,6 +40,16 @@
 body {
   font-family: "Spartan", sans-serif;
 }
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    overflow: hidden;
+  }
+}
 
 main .container {
   margin-top: 5rem;
@@ -50,7 +60,7 @@ main .container {
   display: none;
   position: absolute;
 }
-@media (max-width: 376px) {
+@media (max-width: 767px) {
   .bg-top-mobile {
     display: block;
     left: 0;
@@ -62,7 +72,7 @@ main .container {
     bottom: -10%;
   }
 }
-@media (min-width: 377px) {
+@media (min-width: 768px) {
   .bg-top-desktop {
     display: block;
     left: 0;
@@ -148,7 +158,11 @@ main .container .split .ratings .rating {
   display: flex;
   align-items: center;
   background-color: var(--Light-Grayish-Magenta);
-  margin-bottom: 1rem;
+}
+@media (max-width: 767px) {
+  main .container .split .ratings .rating {
+    margin-bottom: 1rem;
+  }
 }
 
 main .container .split .ratings .rating h2 {
@@ -169,6 +183,9 @@ main .container .split .ratings .rating .stars {
     -moz-border-radius: 0.6rem;
     -ms-border-radius: 0.6rem;
     -o-border-radius: 0.6rem;
+  }
+  main .container .split .ratings .rating .stars {
+    margin: 0 0.5rem 0.5rem;
   }
   main .container .split .ratings h2 {
     font-size: 0.9rem;
